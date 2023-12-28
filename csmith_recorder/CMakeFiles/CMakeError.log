@@ -1,0 +1,85 @@
+Determining if the include file bsd/stdlib.h exists failed with the following output:
+Change Dir: /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cc23/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cc23.dir/build.make CMakeFiles/cmTC_6cc23.dir/build
+make[1]: Entering directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6cc23.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_6cc23.dir/CheckIncludeFile.c.o   -c /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: bsd/stdlib.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_6cc23.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6cc23.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_6cc23.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6cc23/fast' failed
+make: *** [cmTC_6cc23/fast] Error 2
+
+
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74955/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74955.dir/build.make CMakeFiles/cmTC_74955.dir/build
+make[1]: Entering directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74955.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_74955.dir/CheckSymbolExists.c.o   -c /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random_buf’ undeclared (first use in this function)
+   return ((int*)(&arc4random_buf))[argc];
+                   ^
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_74955.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_74955.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_74955.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_74955/fast' failed
+make: *** [cmTC_74955/fast] Error 2
+
+File /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the srand48_deterministic exist failed with the following output:
+Change Dir: /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00dc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00dc8.dir/build.make CMakeFiles/cmTC_00dc8.dir/build
+make[1]: Entering directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00dc8.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_00dc8.dir/CheckSymbolExists.c.o   -c /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘srand48_deterministic’ undeclared (first use in this function)
+   return ((int*)(&srand48_deterministic))[argc];
+                   ^
+/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_00dc8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_00dc8.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_00dc8.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_00dc8/fast' failed
+make: *** [cmTC_00dc8/fast] Error 2
+
+File /data/zzx/compiler_testing/csmith_recorder/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef srand48_deterministic
+  return ((int*)(&srand48_deterministic))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

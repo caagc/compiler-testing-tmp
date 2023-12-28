@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+ebbf96fe7899b075ab61c4f3925b4336 runtime/CMakeFiles/headers
+1dac19d3738b9b7aed00d20da7df2622 runtime/safe_math.h
+010d1605f7d48366b60aa2a91f97e982 runtime/safe_math_macros.h
+c1dd553d3adc39311ed9de43220fb9d2 runtime/safe_math_macros_notmp.h
